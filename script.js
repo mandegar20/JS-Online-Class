@@ -183,25 +183,88 @@ Education  False  true       false
 
 //============================= statement expression
 // expression
-let age = 25;
-console.log(age);
+// let age = 25;
+// console.log(age);
 
-// statement
-if (age > 18) console.log("You are adult");
-console.log();
+// // statement
+// if (age > 18) console.log("You are adult");
+// console.log();
 
 // ============================ Functions
 // block of code -- specific action --  reuse code
-function juicer() {
-  // block of code
-  console.log("input");
-}
-juicer();
 
-// ============================ Functions Declaration
+//  function nameoffunction (parameter)
+// function juicer(fruit) {
+//   // block of code
+//   // console.log("enjoy your ${fruit} juice");
+//   const msg = `enjoy your ${fruit} juice `;
+//   return msg;
+// }
+// console.log(juicer("apple"));
 
-// ============================ Functions Expression
+// // ============================ Functions Declaration
+// console.log(calcAge(1997, 2023));
+// function calcAge(birthYear, currentYear) {
+//   currentYear = 2023;
 
-// ============================ Arrow Function
+//   const age = currentYear - birthYear;
+//   return age;
+// }
+
+// // ============================ Functions Expression
+
+// let calcAgeExp = function (firstName, lastName) {
+//   const introduce = firstName + lastName;
+//   return `I am ${introduce}`;
+// };
+// console.log(calcAgeExp("John", "Doe"));
+// calcAgeExp("mohammad", "hussaini");
+// // ============================ Arrow Function
+// // idnetifer (const, let) name  = parameter => return;
+// const calcAgeArrow = (birthYear) => {
+//   const age = 2023 - birthYear;
+//   return age;
+// };
+// console.log(calcAgeArrow(2000));
 
 // ============================ function inside function
+
+// function getFruitPieces(amount1) {
+//   const fruitPieces = amount1 * 4;
+//   return fruitPieces;
+// }
+
+// const juicer = function (fruit1, fruit2) {
+//   const firstFruitPieces = getFruitPieces(fruit1);
+//   const secondFruitPieces = getFruitPieces(fruit2);
+//   const msg = `enjoy your juice with ${firstFruitPieces} pieces of apple and ${secondFruitPieces} peices of oranges`;
+//   return msg;
+// };
+
+// const juice = juicer(1, 2);
+
+// ============================= Array
+
+const studentsName = ["mohammad", "ahmad", "huusain", "hassan"];
+console.log(studentsName);
+
+const emplyeeInfo = ["Hamed", 32, 45000, true, false, undefined];
+console.log(emplyeeInfo);
+
+// ========================== Arrays Method
+// push - add item to the end of the array
+// pop - remove item from the end of the array
+// unshift - add item to the start of the array
+// shift - remove item from the start of the array
+// splice - add item to the start of the array
+// slice - return a section of the array
+
+emplyeeInfo.push("Mohammadi");
+
+console.log(emplyeeInfo);
+emplyeeInfo.pop();
+console.log(emplyeeInfo);
+emplyeeInfo.unshift("0045");
+console.log(emplyeeInfo);
+emplyeeInfo.shift();
+console.log(emplyeeInfo);
