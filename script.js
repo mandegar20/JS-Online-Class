@@ -268,3 +268,24 @@ emplyeeInfo.unshift("0045");
 console.log(emplyeeInfo);
 emplyeeInfo.shift();
 console.log(emplyeeInfo);
+
+// ========================== Object
+
+// Object - Collection of Key Value Pairs
+// (key, value)  = (car : "BMW")
+const studentsInfo = {
+  firstName: "Hussain",
+  lastName: "Sharifi",
+  age: 34,
+  1: "076782317",
+  isPassed: true,
+};
+
+// Dot notation
+console.log(studentsInfo.firstName);
+
+// ========================== Object Method
+
+// ========================== For loop
+
+// ========================== While loop
