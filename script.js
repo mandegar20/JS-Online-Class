@@ -245,47 +245,109 @@ Education  False  true       false
 
 // ============================= Array
 
-const studentsName = ["mohammad", "ahmad", "huusain", "hassan"];
-console.log(studentsName);
+// const studentsName = ["mohammad", "ahmad", "huusain", "hassan"];
+// console.log(studentsName);
 
-const emplyeeInfo = ["Hamed", 32, 45000, true, false, undefined];
-console.log(emplyeeInfo);
+// const emplyeeInfo = ["Hamed", 32, 45000, true, false, undefined];
+// console.log(emplyeeInfo);
 
-// ========================== Arrays Method
-// push - add item to the end of the array
-// pop - remove item from the end of the array
-// unshift - add item to the start of the array
-// shift - remove item from the start of the array
-// splice - add item to the start of the array
-// slice - return a section of the array
+// // ========================== Arrays Method
+// // push - add item to the end of the array
+// // pop - remove item from the end of the array
+// // unshift - add item to the start of the array
+// // shift - remove item from the start of the array
+// // splice - add item to the start of the array
+// // slice - return a section of the array
 
-emplyeeInfo.push("Mohammadi");
+// emplyeeInfo.push("Mohammadi");
 
-console.log(emplyeeInfo);
-emplyeeInfo.pop();
-console.log(emplyeeInfo);
-emplyeeInfo.unshift("0045");
-console.log(emplyeeInfo);
-emplyeeInfo.shift();
-console.log(emplyeeInfo);
+// console.log(emplyeeInfo);
+// emplyeeInfo.pop();
+// console.log(emplyeeInfo);
+// emplyeeInfo.unshift("0045");
+// console.log(emplyeeInfo);
+// emplyeeInfo.shift();
+// console.log(emplyeeInfo);
 
-// ========================== Object
+// // ========================== Object
 
-// Object - Collection of Key Value Pairs
-// (key, value)  = (car : "BMW")
-const studentsInfo = {
-  firstName: "Hussain",
-  lastName: "Sharifi",
-  age: 34,
-  1: "076782317",
-  isPassed: true,
-};
+// // Object - Collection of Key Value Pairs
+// // (key, value)  = (car : "BMW")
+// const studentsInfo = {
+//   firstName: "Hussain",
+//   lastName: "Sharifi",
+//   age: 34,
+//   1: "076782317",
+//   isPassed: true,
+// };
 
-// Dot notation
-console.log(studentsInfo.firstName);
+// // Dot notation
+// console.log(studentsInfo.firstName);
+// // Square baracket
+// console.log(studentsInfo[0 + 1]);
 
 // ========================== Object Method
-
+// const workerInfo = {
+//   FirstName: "Mohammad",
+//   lastName: "Ahmadi",
+//   currentYear: 2023,
+//   age: function (birthYear) {
+//     return this.currentYear - birthYear;
+//   },
+// };
+// console.log(workerInfo.age(2000));
 // ========================== For loop
+// console.log("You lifted 1");
+// console.log("You lifted 2");
+// console.log("You lifted 3");
+// console.log("You lifted 4");
+// console.log("You lifted 5");
+
+// for (let i = 0; i < 5; i++) console.log(`You lifted ${i}`);
+// let sum = 0;
+
+// for (let j = 0; j <= 10; j++) {
+//   sum = sum + j;
+//   console.log(sum, j);
+// }
+// console.log(sum);
 
 // ========================== While loop
+// let counter = 0;
+// while (counter < 10) {
+//   console.log(`you lifted ${counter}`);
+//   counter++;
+// }
+//
+// ==========================================================
+//           DOM (Document Object Model)
+// ===========================================================
+// // Document Object Model (DOM) is a programming interface that
+//allows us to work with HTML and XML documents.
+// DOM allows JS to select and manipulate HTML Element.
+
+// // Selecting HTML Element
+// console.log(document.querySelector("h1"));
+// document.querySelector("h1");
+// document.getElementsByTagName("h1");
+// document.getElementById("first");
+// document.getElementsByClassName("heading");
+// document.querySelector(".heading");
+// document.querySelector("#first");
+
+// Select:
+const heading = document.querySelector("h1");
+const input = document.querySelector("#name");
+const body = document.querySelector("body");
+
+document.querySelector("h1").textContent = "JS Advance";
+heading.textContent = "JS FUnd";
+input.value = "hussain";
+
+heading.style.color = "#1098ad";
+input.style.padding = "10px";
+body.style.backgroundColor = "#568fe6";
+
+heading.classList.remove("heading");
+heading.classList.add("first-title");
+console.log(heading.classList.contains("second-title"));
