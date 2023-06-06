@@ -5,12 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JS Fundamentals</title>
+    <style>
+      .box {
+        width: 400px;
+        height: 400px;
+        background-color: #fff;
+        border-radius: 4px;
+        box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+        padding: 10px;
+        position: absolute;
+        top: 50px;
+      }
+      .active {
+        display: none;
+      }
+    </style>
   </head>
   <body>
+    <div class="box active">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum,
+      possimus.
+    </div>
     <h1 class="heading main-title" id="first">JavaScript Fundamentals</h1>
     <form action="">
       <label for="name">Your Name:</label>
-      <input type="text" name="name" id="name" />
+      <input type="text" name="name" id="name" /> <br />
+      <br />
+      <input type="submit" value="Register" class="submit-btn" />
     </form>
     <script src="script.js"></script>
   </body>
