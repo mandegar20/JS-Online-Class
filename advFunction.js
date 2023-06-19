@@ -57,53 +57,85 @@
 // const obj = { number: 123, text: "book" };
 // const arr = [1, 4, "Mohammad"];
 
-const kamAir = {
-  airline: "kamAir",
-  iattaCode: "KM",
-  bookings: [],
-  book(name, flightNum) {
-    console.log(
-      `${name} booked a seat on 
-      ${this.airline} with 
-      ${this.iattaCode}${flightNum}`
-    );
-    this.bookings.push({
-      flight: `${this.iattaCode}${flightNum}`,
-      firstName: name,
-    });
-  },
-};
+// const kamAir = {
+//   airline: "kamAir",
+//   iattaCode: "KM",
+//   bookings: [],
+//   book(name, flightNum) {
+//     console.log(
+//       `${name} booked a seat on
+//       ${this.airline} with
+//       ${this.iattaCode}${flightNum}`
+//     );
+//     this.bookings.push({
+//       flight: `${this.iattaCode}${flightNum}`,
+//       firstName: name,
+//     });
+//   },
+// };
 
-// kamAir.book("mohamad", 203);
+// // kamAir.book("mohamad", 203);
+// // console.log(kamAir.bookings);
+
+// //
+
+// const bookvar = kamAir.book;
+
+// // Call
+// bookvar.call(kamAir, "mahdi", 901);
+
+// const Ariana = {
+//   airline: "Ariana",
+//   iattaCode: "AR",
+//   bookings: [],
+// };
+// const flyEmirates = {
+//   airline: "Fly Emirates",
+//   iattaCode: "FE",
+//   bookings: [],
+// };
+
+// bookvar.call(Ariana, "Setara", 1002);
+// console.log(Ariana.bookings);
 // console.log(kamAir.bookings);
 
-//
+// // Apply
+// const passengerInfo = ["Hasan", 2009];
+// bookvar.apply(flyEmirates, passengerInfo);
+// bookvar.call(flyEmirates, ...passengerInfo);
+// console.log(passengerInfo);
+// console.log(...passengerInfo);
 
-const bookvar = kamAir.book;
+// // Bind
+// const bookKA = bookvar.bind(flyEmirates);
+// bookKA("mahmood", 210);
+// const bookAR = bookvar.bind(Ariana);
+// bookAR("mahdi", 980);
 
-// Call
-bookvar.call(kamAir, "mahdi", 901);
-
-const Ariana = {
-  airline: "Ariana",
-  iattaCode: "AR",
-  bookings: [],
+// ==============================================
+//  IIFE  (Immediately Invoked Function Expression)
+// ============================================
+const runOnce = function () {
+  const private = 290;
+  console.log("This runs once");
+  console.log(private);
 };
-const flyEmirates = {
-  airline: "Fly Emirates",
-  iattaCode: "FE",
-  bookings: [],
-};
+runOnce();
 
-bookvar.call(Ariana, "Setara", 1002);
-console.log(Ariana.bookings);
-console.log(kamAir.bookings);
+(function () {
+  console.log(`This will never  run again`);
+})();
 
-// Apply
-const passengerInfo = ["Hasan", 2009];
-bookvar.apply(flyEmirates, passengerInfo);
-bookvar.call(flyEmirates, ...passengerInfo);
-console.log(passengerInfo);
-console.log(...passengerInfo);
+(function () {
+  console.log(`this is an IIFE Function`);
+})();
 
-// Bind
+{
+  const public = "public";
+  let age = 78;
+  var notPrivate = true;
+}
+
+console.log(notPrivate);
+console.log(public);
+console.log(age);
