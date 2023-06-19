@@ -336,47 +336,57 @@ Education  False  true       false
 // document.querySelector("#first");
 
 // Select:
-const heading = document.querySelector("h1");
-const input = document.querySelector("#name");
-const body = document.querySelector("body");
-const submitBtn = document.querySelector(".submit-btn");
-const box = document.querySelector(".box");
+// const heading = document.querySelector("h1");
+// const input = document.querySelector("#name");
+// const body = document.querySelector("body");
+// const submitBtn = document.querySelector(".submit-btn");
+// const box = document.querySelector(".box");
 
-document.querySelector("h1").textContent = "JS Advance";
-heading.textContent = "JS FUnd";
-input.value = "hussain";
-console.dir(input);
+// document.querySelector("h1").textContent = "JS Advance";
+// heading.textContent = "JS FUnd";
+// input.value = "hussain";
+// console.dir(input);
 
-heading.style.color = "#1098ad";
-input.style.padding = "10px";
-body.style.backgroundColor = "#568fe6";
+// heading.style.color = "#1098ad";
+// input.style.padding = "10px";
+// body.style.backgroundColor = "#568fe6";
 
-heading.classList.remove("heading");
-heading.classList.add("first-title");
-console.log(heading.classList.contains("second-title"));
+// heading.classList.remove("heading");
+// heading.classList.add("first-title");
+// console.log(heading.classList.contains("second-title"));
 
-// Event handler
+// // Event handler
 
-submitBtn.addEventListener("click", function (event) {
-  event.preventDefault();
-  console.log("clicked!!!");
-  const name = input.value;
-  box.classList.remove("active");
-  box.textContent = `Your name is ${name}`;
-  console.log(name);
-});
+// submitBtn.addEventListener("click", function (event) {
+//   event.preventDefault();
+//   console.log("clicked!!!");
+//   const name = input.value;
+//   box.classList.remove("active");
+//   box.textContent = `Your name is ${name}`;
+//   console.log(name);
+// });
 
-document.addEventListener("keydown", function (event) {
-  console.log(event);
-  if (event.key === "Escape") {
-    box.classList.add("active");
-  }
+// document.addEventListener("keydown", function (event) {
+//   console.log(event);
+//   if (event.key === "Escape") {
+//     box.classList.add("active");
+//   }
 
-  console.log("one key pressed");
-});
+//   console.log("one key pressed");
+// });
 
-const number = Math.trunc(Math.random() * 20 + 1);
-console.log(number);
+// const number = Math.trunc(Math.random() * 20 + 1);
+// console.log(number);
 
 // Data Structure  Array, object, map, set, string
 // Modern OPerator   Rest, spread,   nullish, optional chaining, logical
+
+// const emplyeeInfo = ["Mohammad", 21, true, false];
+// // Destructuring Array
+// console.log(emplyeeInfo[0]);
+// // const name = emplyeeInfo[0];
+// // const age = emplyeeInfo[1];
+
+// const [name, age, married, retired] = emplyeeInfo;
+
+// console.log(married);
